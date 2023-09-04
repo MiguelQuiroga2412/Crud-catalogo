@@ -84,8 +84,9 @@ class OrdenServicio(db.Model):
     
 
 class Catalogo(db.Model):
-    __tablename__ = 'catalogos'
+    __tablename__ = 'catalogo'
 
     id = Column(Integer, primary_key=True)
     nombre_catalogo = Column(String(255))
-    usuario_id = Column(Integer, ForeignKey('usuario.id'))
+    imagen_catalogo = Column(String(50))
+    
